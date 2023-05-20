@@ -41,19 +41,20 @@ html,body{
 .intro .third{
     font-size: 60px;
     margin-top: -20px;
+    margin-bottom: 30px;
 }
 .intro .des{
-    font-size: x-large;
+    font-size: 60px;
 }
 .intro .anchor{
     margin-top: 80px;
 }
-.intro .anchor{
+/* .intro .anchor{
     display: inline-block;
     font-size: 30px;
     -webkit-text-stroke: 2px #000;
     color: white;
-}
+} */
 .pic{
     background-image: url();
 }
