@@ -32,7 +32,7 @@ html,body{
 .intro .title{
     padding-top: 50px;
     font-size: 100px;
-    margin-bottom: -10px;
+    margin-bottom: -30px;
 }
 .intro .subtitle{
     font-size: 30px;
@@ -40,6 +40,7 @@ html,body{
 }
 .intro .third{
     font-size: 60px;
+    margin-top: -20px;
 }
 .intro .des{
     font-size: x-large;
