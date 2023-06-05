@@ -2,6 +2,7 @@
     box-sizing: border-box;
     border: 1px solid #000;
 }
+<<<<<<< Updated upstream
 a{
     text-decoration: none;
     color: #000;
@@ -16,8 +17,43 @@ html,body{
 }
 .intro{
     background-image: url();
+=======
+
+/* layout */
+/* container */
+.container{
+    width: 992px;
+    margin: 0 auto;
+    display: block;  
+    border: 1px solid #000 ;
+    height: 100%;
+}
+/* hero
+.hero{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+} */
+/* section */
+.section{
+    height: 720px;
+    background-color:lightblue;
+    border: 1px solid black;
+}
+.section4{
+    margin-bottom: 50px;
+}
+/* row */
+.row{
+    text-align: middle;
+    border: 1px solid black;
+}
+/* column */
+.col-1-2{
+>>>>>>> Stashed changes
     display: inline-block;
     vertical-align: top;
+<<<<<<< Updated upstream
     width: 50%;
     height: 100%;
     text-align: center;
@@ -84,4 +120,64 @@ html,body{
     display: inherit;
     vertical-align: top;
     width: 40%;
+=======
+    background-color: rgb(47, 255, 99);
+}
+.col-1-3-updown{
+    color: white;
+    border: 1px solid white;
+    display: block;
+}
+/* footer */
+footer .footer{
+    display: block;
+    background-color: #000;
+    color: white;
+    height: 60px;
+}
+
+/* component */
+
+/* johnbotron */
+.johnbotron{
+    width: 100%;
+    margin: 0;
+    background-color: white;
+}
+/* nav */
+.nav{
+    text-align: center;
+    background-color: yellow;
+}
+/* sec2 h1 */
+.row h1{
+    height: 100px;
+}
+/* news */
+.news{
+    height: 150px;
+    background-color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* decor */
+.decor{
+    background-color: orange;
+    height: 100px;
+    width: 100%;
+}
+
+/* card */
+.card{
+    height: 720px;
+    background-color: pink;
+}
+/* sec4-card */
+.sec4-card{
+    margin: auto;
+    display: block;
+    height: 720px;
+    width: 100%;
+    background-color: purple;
+>>>>>>> Stashed changes
 }
