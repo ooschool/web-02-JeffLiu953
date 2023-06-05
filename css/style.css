@@ -1,0 +1,55 @@
+/* global */
+*{
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid black;
+}
+
+/* layout */
+.container{
+    width: 992px;
+    margin: 0 auto;
+    display: block;  
+    /* border: 1px solid #000 ; */
+    height: 100%;
+}
+.row{
+    
+
+}
+.col-1-2{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    background-color: lightblue;
+}
+.col-1-3-updown{
+    display: block;
+    height: 33.33333333%;
+
+}
+
+/* component */
+header .header{
+    
+}
+/* johnbotron */
+.johnbotron{
+    width: 100%;
+    margin: 0;
+    background-color: white;
+}
+/* nav */
+.nav{
+    background-color: yellow;
+}
+/* news */
+.news{
+    height: 200px;
+}
+/* card */
+.card{
+    height: 720px;
+    background-color: pink;
+}
+.sec2-img
