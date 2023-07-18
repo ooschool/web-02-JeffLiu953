@@ -142,6 +142,7 @@ ul, h1{
 .news-right{
     display: flex;
     height: 720;
+    border: 1px solid black;
 }
 .news-right_info{
     display: block;
