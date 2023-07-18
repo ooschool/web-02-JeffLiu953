@@ -8,7 +8,7 @@ a{
 	text-decoration: none;
 	color: #000;
 }
-ul{
+ul, h1{
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -18,6 +18,7 @@ ul{
 /* container */
 .container{
     display: block; 
+    /* width: 400px ; */
     margin: 0 auto;
      
     border: 1px solid #000 ;
@@ -26,29 +27,22 @@ ul{
 
 /* hero */
 .hero{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
-/* section */
-.section{
-    height: 720px;
-    border: 1px solid black;
-}
+
 
 /* row */
 .row{
     text-align: middle;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
+
 /* column */
 .col-1-2{
     width: 50%;
-    border: 1px solid #000 ;
-    
+    /* border: 1px solid #000 ; */
     text-align: center;
 }
-
-
 
 /* component */
 
@@ -77,12 +71,12 @@ ul{
     background-size: cover;
 }
 .navbar .links{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
 }
 .navbar .links .nav-items{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 10px 20px;
 }
 .navbar .links .nav-link{
@@ -96,7 +90,6 @@ ul{
 }
 .startPage-left{
     height: 720px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,13 +107,14 @@ ul{
 }
 
 .startPage-left_para{
-    padding: 0 20px;
+    padding: 20px 0;
 }
 
 /* news */
 .news-header{
     display: block;
-    font-weight: 1000;
+    font-weight: 900;
+    padding: 0 30px;
 }
 .news{
     display: flex;
@@ -137,6 +131,8 @@ ul{
 .news-left_info-li--a{
     display: inline-block;
     text-align: left;
+    
+    padding: 20px 40px;
 }
 .news-left_info-li--a--para{
     margin: 16px 0;
@@ -145,7 +141,7 @@ ul{
 }
 .news-right{
     display: flex;
-    height: 540px;
+    height: 720;
 }
 .news-right_info{
     display: block;
@@ -156,16 +152,23 @@ ul{
     transform: translate(-50%, -50%);
 
 }
-.news-right_info-link{
-    display: block;
-    border: 1px solid black;
-    height: 450px;
-    width: 400px;
+/* video setting */
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #fff;
 }
+
 /* footer */
-footer .footer{
-    display: block;
-    background-color: #000;
+footer.footer{
+    display:  flex;
+    background-color: #514848;
     color: white;
+    justify-content: center;
+}
+.footer .footer-des{
     height: 60px;
 }
