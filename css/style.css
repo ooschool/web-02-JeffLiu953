@@ -71,3 +71,167 @@
     padding: 16px;
     line-height: 24px;
 }
+
+/* news */
+.news{
+    margin-bottom: 128px;
+}
+.news .news-header .image{
+    width: 500px;
+    height: 150px;
+    background-image: url('../images/news/title_news.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.news .news-header .header-des{
+    border-bottom: 1px solid orange;
+}
+.news .news-lists{
+    border-top: 1px solid black;
+    width: 50%;
+}
+.news .latest-news{
+    height: 128px;
+    border-bottom: 1px solid black;
+    transition: all 0.3s;
+}
+.news .latest-news .time{
+    color: orange;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.news .latest-news a{
+    width: 100%;
+}
+.news .latest-news .title{
+    color: black;
+    line-height: 2;
+    font-size: 16px;
+    height: 64px;
+    font-weight: 600;
+}
+.news .latest-news .arrow{
+    height: 9px;
+    width: 80px;
+    background-image: url('../images/news/topics_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.3s;
+}
+.news .latest-news:hover{
+    background-color: #FF8C00;
+    padding-left: 24px;
+}
+.news .latest-news:hover .time{
+    color: white;
+}
+.news .latest-news:hover .title{
+    color: white;
+}
+.news .latest-news:hover .arrow{
+    margin-right: -24px;
+}
+.news .decor .decor-content{
+    height: 128px;
+
+    transition: all 0.3s;
+}
+.news .decor .decor-content:before, .news .decor .decor-content:after{
+    content: '';
+    height: 64px;
+    width: 20px;
+    background-image: url('../images/news/btn_arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.news .decor .decor-content:after{
+    transform: rotateY(180deg);
+}
+
+.news .decor .decor-content .decor__word{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+.news .decor .decor-content .decor__word:before, .news .decor .decor-content .decor__word:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+
+}
+
+/* episodes */
+.episodes .episodes-header .image{
+    width: 500px;
+    height: 150px;
+    background-image: url('../images/episodes/title_episodes.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.episodes .episodes-header .header-des{
+    border-bottom: 1px solid orange;
+}
+
+/* episodes slider */
+
+
+/* footer */
+.footer{
+    height: 320px;
+    background-color: #000;
+}
+.footer .share p{
+    font-size: 16px;
+    color: white;
+
+    vertical-align: top;
+}
+.social-btns{
+    margin-left: 10px;
+}
+.social-btn{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+}
+.social-btn i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+
+    transition: all 0.3s;
+}
+.social-btn i:hover{
+    color: #FFF200;
+}
+.footer .image{
+    width: 250px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin: 16px;
+}
+.footer .img-container{
+
+}
+.footer .copyright{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}

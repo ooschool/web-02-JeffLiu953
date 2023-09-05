@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- normalize -->
     <link rel="stylesheet" href="./css/normalize.css">
+    <!-- vendor -->
     <link rel="stylesheet" href="./vendor/bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome-free-6.4.0-web/css/all.min.css">
+    <!-- custom -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
     <div class="main" >
@@ -18,7 +24,7 @@
                 <div class="col-6 startPage-left d-flex flex-column align-items-center">
                     <h1 class="startPage-title d-block u-mt-48 u-mb-32"></h1>
                     <h4 class="startPage-des u-pb-32">
-                        <div class="image d-block"></div>
+                        <div class="image"></div>
                     </h4>
                     <ul class="nav d-grid">
                         <li class="nav-item u-padding-8">
@@ -71,67 +77,174 @@
             </div>
         </div>
         <!-- end startPage -->
+        
         <!-- start navbar -->
         <div class="navbar">
-            <div class="container d-flex">
-            <a class="nav_logo d-inline-block align-self-center">nav_logo</a>
-            <ul class="nav d-inline-grid">
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">NEWS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">ON AIR</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">STAFF & CAST</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">INTRODUCTION</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">EPISODES</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">CHARACTER</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">MOVIE</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">MUSIC</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">Blu-ray & DVD</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">GOODS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">BOOKS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">SPECIAL</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">TWITTER</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="navLinks color--white d-inline-block">INSTAGRAM</a>
-                </li>
-            </ul>
-            <p class="des align-self-center">official</p>
+            <div class="container d-flex justify-content-between">
+                <a class="nav_logo d-inline-block align-self-center">nav_logo</a>
+                <ul class="nav d-inline-grid">
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">NEWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">ON AIR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">STAFF & CAST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">INTRODUCTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">EPISODES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">CHARACTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">MOVIE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">MUSIC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">Blu-ray & DVD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">GOODS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">BOOKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">SPECIAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">TWITTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#!" class="navLinks color--white d-inline-block">INSTAGRAM</a>
+                    </li>
+                </ul>
+                <p class="des align-self-center">official</p>
             </div>
         </div>
         <!-- end navbar -->
+
         <!-- start news -->
         <div class="news">
             <div class="container">
-
+                <h1 class="news-header u-mt-48 u-mb-48 d-flex justify-content-between">
+                    <div class="image d-inline-block"></div>
+                    <div class="header-des d-flex flex-column justify-content-between">
+                        <p class="color--black" style="font-size: small; line-height: 1.5;">TV AINMATION<br>Dr.stone NEW WORLD</p>
+                        <p class="color--black u-pb-16" style="font-size: large;">最新情報</p>
+                    </div>
+                </h1>
+                <div class="news-content d-flex justify-content-between">
+                    <ul class="news-lists u-mt-16">
+                        <li class="latest-news u-pt-8 u-pb-8 d-flex align-items-center">
+                            <a href="#!" class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="time">2023.8.26</p>
+                                    <p class="title">『Dr.STONE NEW WORLD』第2クールPV公開！</p>
+                                </div>
+                                <div class="arrow">
+                                    <div class="image"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="latest-news u-pt-8 u-pb-8 d-flex align-items-center">
+                            <a href="#!" class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="time">2023.8.26</p>
+                                    <p class="title">『Dr.STONE NEW WORLD』第2クールPV公開！</p>
+                                </div>
+                                <div class="arrow">
+                                    <div class="image"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="latest-news u-pt-8 u-pb-8 d-flex align-items-center">
+                            <a href="#!" class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="time">2023.8.26</p>
+                                    <p class="title">『Dr.STONE NEW WORLD』第2クールPV公開！</p>
+                                </div>
+                                <div class="arrow">
+                                    <div class="image"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="twitter">
+                        
+                    </div>
+                </div>
+                <div class="decor d-flex u-mt-40 justify-content-evenly">
+                    <a href="#!" class="decor-content d-flex align-items-center">
+                        <span class="color--black decor__word">ACHIEVE</span>
+                    </a>
+                    <a href="#!" class="decor-content d-flex align-items-center">
+                        <span class="color--black decor__word">FOLLOW US</span>
+                    </a>
+                </div>
             </div>
         </div>
         <!-- end news -->
-        <!-- start video -->
-        <!-- end video -->
+
+        <!-- start episodes -->
+        <div class="episodes">
+            <div class="container">
+                <h1 class="episodes-header u-mt-48 u-mb-48 d-flex justify-content-between">
+                    <div class="image d-inline-block"></div>
+                    <div class="header-des d-flex flex-column justify-content-between">
+                        <p class="color--black" style="font-size: small; line-height: 1.5;">TV AINMATION<br>Dr.stone NEW WORLD</p>
+                        <p class="color--black u-pb-16" style="font-size: large;">各話あらすじ</p>
+                    </div>
+                </h1>
+                <!-- sliders -->
+
+            </div>
+        </div>
+        <!-- end episodes -->
+
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="u-pt-16 u-ml-32 share d-flex justify-content-start">
+                <p class="d-inline-block">share</p>
+                <div class="social-btns">
+                    <a href="#!" class="social-btn">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#!" class="social-btn">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#!" class="social-btn">
+                        <i class="fa-brands fa-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container img-container d-flex justify-content-center">
+                <div class="image" style="background-image: url('./images/footer/bnr_bddvdbox.jpg');"></div>
+                <div class="image" style="background-image: url('./images/footer/bnr_visualgallery-1.jpg');"></div>
+                <div class="image" style="background-image: url('./images/footer/bnr_cp.jpg');"></div>
+            </div>
+            <div class="copyright text-align-center">
+                ©米スタジオ・Boichi／集英社・Dr.STONE製作委員会
+            </div>
+        </footer>
+        <!-- end footer -->
     </div>
 </body>
+<!-- javascript -->
+<script src="./vendor/jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+<!-- library -->
+<script src="./vendor/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+<!-- custom -->
+<script>
+    $('document').ready(function(){
+
+    })
+</script>
 </html>
