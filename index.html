@@ -64,15 +64,28 @@
                             <a href="#!" class="navLinks">SPECIAL</a>
                         </li>
                         <li class="nav-item u-padding-8">
-                            <a href="#!" class="navLinks">TWITTER</a>
+                            <a href="#!" class="navLinks">TWITTER
+                                <span>
+                                    <i class="fa-brands fa-twitter fa-lg"></i>
+                                </span>
+                            </a>
                         </li>
                         <li class="nav-item u-padding-8">
-                            <a href="#!" class="navLinks">INSTAGRAM</a>
+                            <a href="#!" class="navLinks">INSTAGRAM
+                                <span>
+                                <i class="fa-brands fa-instagram fa-lg"></i>
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 startPage-right d-block">
-                    <div class="image d-block"></div>
+                <div class="col-6 startPage-right">
+                    <div class="image1"></div>
+                    <div class="startPage-img-container d-flex justify-content-center">
+                        <div class="image" style="background-image: url('./images/footer/bnr_bddvdbox.jpg');"></div>
+                        <div class="image" style="background-image: url('./images/footer/bnr_visualgallery-1.jpg');"></div>
+                        <div class="image" style="background-image: url('./images/footer/bnr_cp.jpg');"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,16 +190,16 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="twitter">
-                        
+                    <div class="twitter d-flex justify-content-center align-items-center">
+                        <a class="twitter-timeline" data-width="500" data-height="400" href="https://twitter.com/STONE_anime_off?ref_src=twsrc%5Etfw">Tweets by STONE_anime_off</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
                 <div class="decor d-flex u-mt-40 justify-content-evenly">
-                    <a href="#!" class="decor-content d-flex align-items-center">
-                        <span class="color--black decor__word">ACHIEVE</span>
+                    <a href="#!" class="decor-content d-flex align-items-center justify-content-center">
+                        <span class="decor__word">ACHIEVE</span>
                     </a>
                     <a href="#!" class="decor-content d-flex align-items-center">
-                        <span class="color--black decor__word">FOLLOW US</span>
+                        <span class="decor__word">FOLLOW US</span>
                     </a>
                 </div>
             </div>
@@ -204,34 +217,47 @@
                     </div>
                 </h1>
                 <!-- sliders -->
+                <div class="episode-slider">
 
+                </div>
             </div>
         </div>
         <!-- end episodes -->
 
+        <!-- start video -->
+        <div class="video d-flex flex-column align-items-center justify-content-center">
+            <p class="des">第2クールメインPV</p>
+            <a href="#!" class="play"></a>
+            <p class="des">PLAY</p>
+        </div>
+        <!-- end video -->
+        
         <!-- start footer -->
         <footer class="footer">
-            <div class="u-pt-16 u-ml-32 share d-flex justify-content-start">
-                <p class="d-inline-block">share</p>
-                <div class="social-btns">
-                    <a href="#!" class="social-btn">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#!" class="social-btn">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#!" class="social-btn">
-                        <i class="fa-brands fa-line"></i>
-                    </a>
+            <div class="d-flex flex-column justify-content-around" 
+            style="height: 400px; width: 90%;">
+                <div class="u-pt-16 u-ml-32 u-mb-32 share d-flex justify-content-start align-items-center">
+                    <p class="footer-des d-inline-block">SHARE</p>
+                    <div class="social-btns">
+                        <a href="#!" class="social-btn">
+                            <i class="fa-brands fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#!" class="social-btn">
+                            <i class="fa-brands fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="#!" class="social-btn">
+                            <i class="fa-brands fa-line fa-lg"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="container img-container d-flex justify-content-center">
-                <div class="image" style="background-image: url('./images/footer/bnr_bddvdbox.jpg');"></div>
-                <div class="image" style="background-image: url('./images/footer/bnr_visualgallery-1.jpg');"></div>
-                <div class="image" style="background-image: url('./images/footer/bnr_cp.jpg');"></div>
-            </div>
-            <div class="copyright text-align-center">
-                ©米スタジオ・Boichi／集英社・Dr.STONE製作委員会
+                <div class="img-container d-flex justify-content-center u-mb-32">
+                    <div class="image" style="background-image: url('./images/footer/bnr_bddvdbox.jpg');"></div>
+                    <div class="image" style="background-image: url('./images/footer/bnr_visualgallery-1.jpg');"></div>
+                    <div class="image" style="background-image: url('./images/footer/bnr_cp.jpg');"></div>
+                </div>
+                <div class="copyright text-align-center">
+                    ©米スタジオ・Boichi／集英社・Dr.STONE製作委員会
+                </div>
             </div>
         </footer>
         <!-- end footer -->
@@ -240,11 +266,18 @@
 <!-- javascript -->
 <script src="./vendor/jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
 <!-- library -->
-<script src="./vendor/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+<script src="./vendor/Vide-0.5.1/jquery.vide.min.js"></script>
+<script src="./vendor/slick-1.8.1/slick/slick.min.js"></script>
 <!-- custom -->
 <script>
     $('document').ready(function(){
-
+        //startPage sliders
+        //background video 
+        $('.video').vide({
+            'mp4': './videos/intro.mp4',
+            'webm': './videos/intro.webm',
+            'poster': './images/background/bg.jpg'
+        })
     })
 </script>
 </html>

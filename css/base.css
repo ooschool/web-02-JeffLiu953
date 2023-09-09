@@ -28,11 +28,6 @@ body{
     line-height: 1.6;
     font-weight: 300;
     color: #40414f;
-    
-    background-image: url('../images/background/bg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 a{
     color: #40414f;
